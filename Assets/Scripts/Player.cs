@@ -3,16 +3,24 @@ using System.Numerics;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Serialization;
+using Quaternion = UnityEngine.Quaternion;
 using Vector2 = UnityEngine.Vector2;
 
 public class Player : MonoBehaviour
 {
+    [Header("Player stats")]
     [SerializeField] private float movementSpeed = 1f;
     [SerializeField] private float acceleration = 1.0f;
     [SerializeField] private float stationaryAcceleration = 0.2f;
     [SerializeField] private float turnDegreesPerSecond = 720f;
     [SerializeField] private float directionDebuffValue = 10;
     [SerializeField] private float viewAngle = 90f;
+    [SerializeField] private float movementYOffset = -0.03f;
+
+    [Header("Player objects")]
+    [SerializeField] private Transform rotationObject;
+    [SerializeField] private Transform flashlightObject;
+    [SerializeField] private BoxCollider2D hitbox;
     
     private static readonly int AnimatorSpeed = Animator.StringToHash("speed");
     private static readonly int AnimatorDirX = Animator.StringToHash("dirX");
@@ -77,6 +85,8 @@ public class Player : MonoBehaviour
             return;
         
         _animAngle = Mathf.MoveTowardsAngle(_animAngle, _targetAngle, turnDegreesPerSecond * Time.deltaTime);
+        Debug.Log(_animAngle);
+        RotateObjectsOnMove();
         
         float rad = _animAngle * Mathf.Deg2Rad;
         _animator.SetFloat(AnimatorDirX, Mathf.Sin(rad));
@@ -101,5 +111,10 @@ public class Player : MonoBehaviour
         float diff = Mathf.DeltaAngle(_animAngle, _targetAngle);
         
         return Mathf.Abs(diff) < viewAngle;
+    }
+
+    private void RotateObjectsOnMove()
+    {
+        rotationObject.rotation = Quaternion.Euler(0, 0, -_animAngle);
     }
 }

@@ -1,0 +1,949 @@
+fileFormatVersion: 2
+guid: 03e601002807a2b44898599294468376
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3688068586195587997
+    second: grass_base_tiles_greyscale_0
+  - first:
+      213: -7599931658821803247
+    second: grass_base_tiles_greyscale_1
+  - first:
+      213: -6761032233790770823
+    second: grass_base_tiles_greyscale_2
+  - first:
+      213: 4207278877783294478
+    second: grass_base_tiles_greyscale_3
+  - first:
+      213: -7718170972661636541
+    second: grass_base_tiles_greyscale_4
+  - first:
+      213: 986044572022410223
+    second: grass_base_tiles_greyscale_5
+  - first:
+      213: 6611747594163632761
+    second: grass_base_tiles_greyscale_6
+  - first:
+      213: -5989842683868171465
+    second: grass_base_tiles_greyscale_7
+  - first:
+      213: -3904493848043508751
+    second: grass_base_tiles_greyscale_8
+  - first:
+      213: -8980144923119393060
+    second: grass_base_tiles_greyscale_9
+  - first:
+      213: -2060791090664054489
+    second: grass_base_tiles_greyscale_10
+  - first:
+      213: 1926410180425853603
+    second: grass_base_tiles_greyscale_11
+  - first:
+      213: 5041469391906281272
+    second: grass_base_tiles_greyscale_12
+  - first:
+      213: 6071785101177821083
+    second: grass_base_tiles_greyscale_13
+  - first:
+      213: 4351679905962479688
+    second: grass_base_tiles_greyscale_14
+  - first:
+      213: -1195424602000120576
+    second: grass_base_tiles_greyscale_15
+  - first:
+      213: -696700516508693092
+    second: grass_base_tiles_greyscale_16
+  - first:
+      213: -2625136042889800098
+    second: grass_base_tiles_greyscale_17
+  - first:
+      213: -1579749925279907669
+    second: grass_base_tiles_greyscale_18
+  - first:
+      213: 6278761475619418299
+    second: grass_base_tiles_greyscale_19
+  - first:
+      213: -3995603069584771595
+    second: grass_base_tiles_greyscale_20
+  - first:
+      213: -4145611819340661608
+    second: grass_base_tiles_greyscale_21
+  - first:
+      213: -6887261192910797028
+    second: grass_base_tiles_greyscale_22
+  - first:
+      213: -3426608728644222582
+    second: grass_base_tiles_greyscale_23
+  - first:
+      213: 7969103274401274006
+    second: grass_base_tiles_greyscale_24
+  - first:
+      213: 4174410498822923274
+    second: grass_base_tiles_greyscale_25
+  - first:
+      213: 1824826642585885244
+    second: grass_base_tiles_greyscale_26
+  - first:
+      213: 4402716676340421952
+    second: grass_base_tiles_greyscale_27
+  - first:
+      213: -7626684957964789526
+    second: grass_base_tiles_greyscale_28
+  - first:
+      213: -8077954966187814695
+    second: grass_base_tiles_greyscale_29
+  - first:
+      213: 3698044451375369733
+    second: grass_base_tiles_greyscale_30
+  - first:
+      213: 4062115448812738794
+    second: grass_base_tiles_greyscale_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 364
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d931773c6d6ae2330800000000000000
+      internalID: 3688068586195587997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 363
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1136ea62c6e978690800000000000000
+      internalID: -7599931658821803247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_2
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 364
+        width: 42
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9717fed310dfb22a0800000000000000
+      internalID: -6761032233790770823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 31
+        width: 194
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e02074529d1436a30800000000000000
+      internalID: 4207278877783294478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_4
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 334
+        width: 67
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342a5ca946c83e490800000000000000
+      internalID: -7718170972661636541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_5
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 334
+        width: 69
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb091060522fad00800000000000000
+      internalID: 986044572022410223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_6
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 334
+        width: 68
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97abaa60865a1cb50800000000000000
+      internalID: 6611747594163632761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 301
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733b09780ddcfdca0800000000000000
+      internalID: -5989842683868171465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_8
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 300
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb2ba7388370d9c0800000000000000
+      internalID: -3904493848043508751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_9
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 301
+        width: 39
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6e0f175cd106380800000000000000
+      internalID: -8980144923119393060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_10
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 229
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 721edaceb699663e0800000000000000
+      internalID: -2060791090664054489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_11
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 228
+        width: 91
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aaaaff3adbfbba10800000000000000
+      internalID: 1926410180425853603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_12
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 228
+        width: 87
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 837149a73b5e6f540800000000000000
+      internalID: 5041469391906281272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_13
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97963c3160534450800000000000000
+      internalID: 6071785101177821083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_14
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840591b71d5446c30800000000000000
+      internalID: 4351679905962479688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_15
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 239
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005250a78aff86fe0800000000000000
+      internalID: -1195424602000120576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9d0bae4292d456f0800000000000000
+      internalID: -696700516508693092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_17
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e569a747da4a19bd0800000000000000
+      internalID: -2625136042889800098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 175
+        width: 34
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba0cdb510d9931ae0800000000000000
+      internalID: -1579749925279907669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_19
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 139
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0f3b7bb44a22750800000000000000
+      internalID: 6278761475619418299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_20
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 139
+        width: 74
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f570f58d24cc88c0800000000000000
+      internalID: -3995603069584771595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_21
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 139
+        width: 76
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89cf983c304d776c0800000000000000
+      internalID: -4145611819340661608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_22
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 110
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1708317f688b60a0800000000000000
+      internalID: -6887261192910797028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_23
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 110
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8188e8248d3270d0800000000000000
+      internalID: -3426608728644222582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_24
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 110
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6981719b431f79e60800000000000000
+      internalID: 7969103274401274006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_25
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 44
+        width: 85
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0460015b3c7ee930800000000000000
+      internalID: 4174410498822923274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_26
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 37
+        width: 87
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a1000c926135910800000000000000
+      internalID: 1824826642585885244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_27
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 35
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04595f39d77991d30800000000000000
+      internalID: 4402716676340421952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_28
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 39
+        width: 44
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae891ba4072982690800000000000000
+      internalID: -7626684957964789526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_29
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 43
+        width: 49
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d0d5c0d1c655ef80800000000000000
+      internalID: -8077954966187814695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_30
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 41
+        width: 41
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e45dfd5d7125330800000000000000
+      internalID: 3698044451375369733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grass_base_tiles_greyscale_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae81c1b8a788f5830800000000000000
+      internalID: 4062115448812738794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      grass_base_tiles_greyscale_0: 3688068586195587997
+      grass_base_tiles_greyscale_1: -7599931658821803247
+      grass_base_tiles_greyscale_10: -2060791090664054489
+      grass_base_tiles_greyscale_11: 1926410180425853603
+      grass_base_tiles_greyscale_12: 5041469391906281272
+      grass_base_tiles_greyscale_13: 6071785101177821083
+      grass_base_tiles_greyscale_14: 4351679905962479688
+      grass_base_tiles_greyscale_15: -1195424602000120576
+      grass_base_tiles_greyscale_16: -696700516508693092
+      grass_base_tiles_greyscale_17: -2625136042889800098
+      grass_base_tiles_greyscale_18: -1579749925279907669
+      grass_base_tiles_greyscale_19: 6278761475619418299
+      grass_base_tiles_greyscale_2: -6761032233790770823
+      grass_base_tiles_greyscale_20: -3995603069584771595
+      grass_base_tiles_greyscale_21: -4145611819340661608
+      grass_base_tiles_greyscale_22: -6887261192910797028
+      grass_base_tiles_greyscale_23: -3426608728644222582
+      grass_base_tiles_greyscale_24: 7969103274401274006
+      grass_base_tiles_greyscale_25: 4174410498822923274
+      grass_base_tiles_greyscale_26: 1824826642585885244
+      grass_base_tiles_greyscale_27: 4402716676340421952
+      grass_base_tiles_greyscale_28: -7626684957964789526
+      grass_base_tiles_greyscale_29: -8077954966187814695
+      grass_base_tiles_greyscale_3: 4207278877783294478
+      grass_base_tiles_greyscale_30: 3698044451375369733
+      grass_base_tiles_greyscale_31: 4062115448812738794
+      grass_base_tiles_greyscale_4: -7718170972661636541
+      grass_base_tiles_greyscale_5: 986044572022410223
+      grass_base_tiles_greyscale_6: 6611747594163632761
+      grass_base_tiles_greyscale_7: -5989842683868171465
+      grass_base_tiles_greyscale_8: -3904493848043508751
+      grass_base_tiles_greyscale_9: -8980144923119393060
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
