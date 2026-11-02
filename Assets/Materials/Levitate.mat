@@ -54,12 +54,13 @@ Material:
     m_Ints: []
     m_Floats:
     - _EnableExternalAlpha: 0
+    - _Seed: 0
     - _ZWrite: 0
     m_Colors:
     - White: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Scale: {r: 0, g: 1, b: 0, a: 0}
+    - _Scale: {r: 1, g: 5, b: 2.71, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
 --- !u!114 &10545677326115283

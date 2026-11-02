@@ -8,6 +8,7 @@ using Vector2 = UnityEngine.Vector2;
 
 public class Player : MonoBehaviour
 {
+    // TODO: SO
     [Header("Player stats")]
     [SerializeField] private float movementSpeed = 1f;
     [SerializeField] private float acceleration = 1.0f;
