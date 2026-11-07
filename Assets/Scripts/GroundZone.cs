@@ -139,7 +139,6 @@ public class GroundZones : MonoBehaviour
     {
         Kill();
 
-        // fixed size + fixed format, so any source texture fits
         _textures = new Texture2DArray(textureSize, textureSize, paletteList.Count * 3,
             TextureFormat.RGBA32, false, false);   // last false = sRGB
         _textures.hideFlags = HideFlags.HideAndDontSave;
@@ -169,7 +168,7 @@ public class GroundZones : MonoBehaviour
 
     private void Upload(Texture2D src, int slice, RenderTexture rt, Texture2D readback)
     {
-        Graphics.Blit(src, rt);                       // resizes and converts format
+        Graphics.Blit(src, rt);
         RenderTexture.active = rt;
         readback.ReadPixels(new Rect(0, 0, textureSize, textureSize), 0, 0);
         readback.Apply(false);

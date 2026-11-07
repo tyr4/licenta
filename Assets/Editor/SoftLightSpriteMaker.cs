@@ -5,16 +5,16 @@ using UnityEngine;
 public class SoftLightSpriteWindow : EditorWindow
 {
     // Settings
-    int size = 512;
-    float innerAngle = 5f;
-    float outerAngle = 30f;
-    float innerDist = 0.15f;
-    float outerDist = 1f;
-    float falloffPower = 1f;
-    string savePath = "Assets/Sprites/flashlight_soft.png";
+    private int _size = 512;
+    private float _innerAngle = 5f;
+    private float _outerAngle = 30f;
+    private float _innerDist = 0.15f;
+    private float _outerDist = 1f;
+    private float _falloffPower = 1f;
+    private string _savePath = "Assets/Sprites/flashlight_soft.png";
 
-    Texture2D preview;
-    Vector2 scroll;
+    private Texture2D _preview;
+    private Vector2 _scroll;
 
     [MenuItem("Tools/Soft Light Sprite Generator")]
     static void Open()
@@ -28,44 +28,44 @@ public class SoftLightSpriteWindow : EditorWindow
 
     void OnDisable()
     {
-        if (preview != null) DestroyImmediate(preview);
+        if (_preview != null) DestroyImmediate(_preview);
     }
 
     void OnGUI()
     {
-        scroll = EditorGUILayout.BeginScrollView(scroll);
+        _scroll = EditorGUILayout.BeginScrollView(_scroll);
 
         EditorGUI.BeginChangeCheck();
 
         EditorGUILayout.LabelField("Cone (points up)", EditorStyles.boldLabel);
-        innerAngle = EditorGUILayout.Slider("Inner Half-Angle", innerAngle, 0f, 89f);
-        outerAngle = EditorGUILayout.Slider("Outer Half-Angle", outerAngle, 1f, 90f);
+        _innerAngle = EditorGUILayout.Slider("Inner Half-Angle", _innerAngle, 0f, 89f);
+        _outerAngle = EditorGUILayout.Slider("Outer Half-Angle", _outerAngle, 1f, 90f);
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Reach", EditorStyles.boldLabel);
-        innerDist = EditorGUILayout.Slider("Inner Distance", innerDist, 0f, 1.5f);
-        outerDist = EditorGUILayout.Slider("Outer Distance", outerDist, 0.05f, 1.5f);
+        _innerDist = EditorGUILayout.Slider("Inner Distance", _innerDist, 0f, 1.5f);
+        _outerDist = EditorGUILayout.Slider("Outer Distance", _outerDist, 0.05f, 1.5f);
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Shape", EditorStyles.boldLabel);
-        falloffPower = EditorGUILayout.Slider("Falloff Power", falloffPower, 0.2f, 4f);
+        _falloffPower = EditorGUILayout.Slider("Falloff Power", _falloffPower, 0.2f, 4f);
 
         EditorGUILayout.Space();
         EditorGUILayout.LabelField("Output", EditorStyles.boldLabel);
-        size = EditorGUILayout.IntPopup("Size", size,
+        _size = EditorGUILayout.IntPopup("Size", _size,
             new[] { "128", "256", "512", "1024" },
             new[] { 128, 256, 512, 1024 });
-        savePath = EditorGUILayout.TextField("Save Path", savePath);
+        _savePath = EditorGUILayout.TextField("Save Path", _savePath);
 
         if (EditorGUI.EndChangeCheck())
         {
-            if (outerAngle <= innerAngle) outerAngle = innerAngle + 1f;
-            if (outerDist <= innerDist) outerDist = innerDist + 0.05f;
+            if (_outerAngle <= _innerAngle) _outerAngle = _innerAngle + 1f;
+            if (_outerDist <= _innerDist) _outerDist = _innerDist + 0.05f;
             RebuildPreview();
         }
 
         // Warn about hard cutoffs at the image edges
-        if (outerAngle > 30f && outerDist > 0.5f)
+        if (_outerAngle > 30f && _outerDist > 0.5f)
         {
             EditorGUILayout.HelpBox(
                 "Wide angle plus long reach can touch the left/right image edges and " +
@@ -80,7 +80,7 @@ public class SoftLightSpriteWindow : EditorWindow
         Rect r = GUILayoutUtility.GetRect(previewSize, previewSize, GUILayout.ExpandWidth(false));
         EditorGUI.DrawRect(r, Color.black);
         
-        if (preview != null) GUI.DrawTexture(r, preview, ScaleMode.ScaleToFit, false);
+        if (_preview != null) GUI.DrawTexture(r, _preview, ScaleMode.ScaleToFit, false);
 
         EditorGUILayout.Space();
         if (GUILayout.Button("Generate Sprite", GUILayout.Height(32)))
@@ -112,9 +112,9 @@ public class SoftLightSpriteWindow : EditorWindow
             float dist = Mathf.Sqrt(dx * dx + dy * dy);
             float angle = Mathf.Atan2(Mathf.Abs(dx), dy) * Mathf.Rad2Deg; // 0 = straight up
 
-            float radial = 1f - Smooth(innerDist, outerDist, dist);
-            float angular = 1f - Smooth(innerAngle, outerAngle, angle);
-            float v = Mathf.Pow(radial * angular, falloffPower);
+            float radial = 1f - Smooth(_innerDist, _outerDist, dist);
+            float angular = 1f - Smooth(_innerAngle, _outerAngle, angle);
+            float v = Mathf.Pow(radial * angular, _falloffPower);
 
             byte b = (byte)Mathf.RoundToInt(Mathf.Clamp01(v) * 255f);
             pixels[y * res + x] = new Color32(b, b, b, 255);
@@ -127,25 +127,25 @@ public class SoftLightSpriteWindow : EditorWindow
 
     void RebuildPreview()
     {
-        if (preview != null) DestroyImmediate(preview);
-        preview = BuildTexture(128);
-        preview.wrapMode = TextureWrapMode.Clamp;
+        if (_preview != null) DestroyImmediate(_preview);
+        _preview = BuildTexture(128);
+        _preview.wrapMode = TextureWrapMode.Clamp;
         Repaint();
     }
 
     void Generate()
     {
-        string dir = Path.GetDirectoryName(savePath);
+        string dir = Path.GetDirectoryName(_savePath);
         if (!string.IsNullOrEmpty(dir) && !Directory.Exists(dir))
             Directory.CreateDirectory(dir);
 
-        var tex = BuildTexture(size);
-        File.WriteAllBytes(savePath, tex.EncodeToPNG());
+        var tex = BuildTexture(_size);
+        File.WriteAllBytes(_savePath, tex.EncodeToPNG());
         DestroyImmediate(tex);
 
-        AssetDatabase.ImportAsset(savePath, ImportAssetOptions.ForceUpdate);
+        AssetDatabase.ImportAsset(_savePath, ImportAssetOptions.ForceUpdate);
 
-        var imp = (TextureImporter)AssetImporter.GetAtPath(savePath);
+        var imp = (TextureImporter)AssetImporter.GetAtPath(_savePath);
         imp.textureType = TextureImporterType.Sprite;
         imp.spriteImportMode = SpriteImportMode.Single;
         imp.wrapMode = TextureWrapMode.Clamp;
@@ -160,8 +160,8 @@ public class SoftLightSpriteWindow : EditorWindow
         imp.SetTextureSettings(settings);
         imp.SaveAndReimport();
 
-        var asset = AssetDatabase.LoadAssetAtPath<Object>(savePath);
+        var asset = AssetDatabase.LoadAssetAtPath<Object>(_savePath);
         EditorGUIUtility.PingObject(asset);
-        Debug.Log($"Soft light sprite saved to {savePath}");
+        Debug.Log($"Soft light sprite saved to {_savePath}");
     }
 }
