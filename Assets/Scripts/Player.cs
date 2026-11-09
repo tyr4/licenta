@@ -86,7 +86,7 @@ public class Player : MonoBehaviour
             return;
         
         _animAngle = Mathf.MoveTowardsAngle(_animAngle, _targetAngle, turnDegreesPerSecond * Time.deltaTime);
-        Debug.Log(_animAngle);
+        // Debug.Log(_animAngle);
         RotateObjectsOnMove();
         
         float rad = _animAngle * Mathf.Deg2Rad;
@@ -104,7 +104,7 @@ public class Player : MonoBehaviour
         }
         else _targetAngle = _animAngle;
         
-        Debug.Log(input);
+        // Debug.Log(input);
     }
 
     private bool IsInView()
